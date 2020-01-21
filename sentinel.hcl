@@ -4,5 +4,5 @@ policy "enforce-mandatory-tags" {
 
 
 policy "restrict-publishers-of-current-vms" {
-    enforcement_level = "hard"
+    enforcement_level = "hard mandat"
 }
