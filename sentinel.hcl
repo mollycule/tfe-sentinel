@@ -3,6 +3,6 @@ policy "enforce-mandatory-tags" {
 }
 
 
-policy "restrict-publishers-of-current-vms" {
+policy "restrict-vm-image-id" {
     enforcement_level = "hard-mandatory"
 }
