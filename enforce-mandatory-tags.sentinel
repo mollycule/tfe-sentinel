@@ -5,8 +5,8 @@ import "tfplan"
 # where case sensitivity will cause grouping issues
 
 mandatory_tags = [
-  "TTL", 
-  "Owner",
+  "region", 
+  "group",
 ]
 
 # Get all Azure instances contained in all modules being used

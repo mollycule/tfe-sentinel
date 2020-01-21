@@ -10,7 +10,6 @@ get_vms = func() {
 
 
 allowed_image_ids = [
-  "/subscriptions/<subscription_id>/resourceGroups/ABC-US-Z-RGP-NJS3-E005/providers/Microsoft.Compute/images/WIN-base-image",
   "/subscriptions/<subscription_id>/resourceGroups/ABC-US-Z-RGP-NJS3-E005/providers/Microsoft.Compute/images/RHEL-base-image",
 ]
 
@@ -28,3 +27,5 @@ vm_image_id_allowed = rule {
 main = rule {
   (vm_image_id_allowed) else true
 }
+
+
