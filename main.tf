@@ -24,7 +24,7 @@ provider "azurerm" {
 resource "tfe_sentinel_policy" "main" {
     name         = "enforce-mandatory-tags"
     description  = "Don't allow resources to be created without tags"
-    organization = var.organization
+    organization = var.tfe_organization
     policy       = file("${path.module}/sentinel/enforce-mandatory-tags.sentinel")
     enforce_mode = "hard-mandatory"
 }
