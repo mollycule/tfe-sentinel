@@ -21,6 +21,6 @@ resource "tfe_sentinel_policy" "main" {
     name         = "enforce-mandatory-tags"
     description  = "Don't allow resources to be created without tags"
     organization = var.tfe_token
-    policy       = file("${path.module}/sentinel/enforce-mandatory-tags.sentinel)
+    policy       = file("${path.module}/sentinel/enforce-mandatory-tags.sentinel")
     enforce_mode = "hard-mandatory"
 }
