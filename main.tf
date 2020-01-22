@@ -14,7 +14,6 @@ provider "azurerm" {
     # whilst the `version` attribute is optional, we recommend pinning to a given version of the Provider
     version = "=1.38.0"
     token    = var.tfe_token
-    version  = "~> 0.6"
 }
 
 resource "tfe_sentinel_policy" "main" {
