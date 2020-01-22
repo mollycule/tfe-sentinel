@@ -15,10 +15,10 @@ variable "tfe_token" {
     default     = "token_value"
 }
 
-provider "azurerm" {
-    # whilst the `version` attribute is optional, we recommend pinning to a given version of the Provider
-    version = "=1.38.0"
-    token    = var.tfe_token
+
+provider "tfe" {
+  hostname = var.tfe_hostname
+  token    = var.tfe_token
 }
 
 resource "tfe_sentinel_policy" "main" {
