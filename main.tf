@@ -10,6 +10,11 @@ variable "tfe_organization" {
     default     = "example_corp"
 }
 
+variable "tfe_token" {
+    description = "TFE Token to atuhenticate"
+    default     = "token_value"
+}
+
 provider "azurerm" {
     # whilst the `version` attribute is optional, we recommend pinning to a given version of the Provider
     version = "=1.38.0"
