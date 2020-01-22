@@ -11,8 +11,9 @@ variable "tfe_token" {
   description = "TFE Token to authenticate"
 }
 
-variable "tfe_workspace_name" {
-  description = "Name of workspace policies are applied to"
+variable "tfe_workspace_names" {
+  description = "Name of workspaces policies are applied to"
+  type        = list
 }
 
 
