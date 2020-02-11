@@ -1,2 +1,0 @@
-# ~/azurerm/dev/dev-core-1/test
-# Test file to trigger terraform plan upon merge to master in a VCS-driven workflow
